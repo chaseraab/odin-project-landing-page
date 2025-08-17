@@ -74,12 +74,49 @@ button {
 }
 
 .second-row {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-row-header {
+    font-weight: bold;
+    padding-bottom: 36px;
+    font-size: 24px;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 64px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.card-box {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+    border: 2px solid #3882F6;
 }
 
 .third-row {
     background-color: #E5E7EB;
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 250px;
 }
 
 .quote {
@@ -89,8 +126,25 @@ button {
     font-style: italic;
 }
 
+.quote-author {
+    font-weight: bold;
+    padding-left: 400px;
+}
+
 .fourth-row {
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-row-background{
+    width: 1000px;
+    height: 100px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .fourth-row-background, button {
@@ -101,9 +155,18 @@ button {
     color: white;
 }
 
-
-
-.footer {
-    color: #F9FAF8;
+.fourth-row-text-bold {
+    font-weight: bold;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    height: 72px;
+}
+
+.fourth-row-background button {
+    border-color: white;
+}
